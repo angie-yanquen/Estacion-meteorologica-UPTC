@@ -1,3 +1,6 @@
+# Copyright 2024: Cesar Rodriguez, Angie Yanquen.
+#DESARROLLO DE UNA ESTACIÓN METEOROLÓGICA ORIENTADA A LA PREDICCIÓN DE VARIABLES CLIMÁTICAS MEDIANTE LA APLICACIÓN DE TÉCNICAS DE INTELIGENCIA ARTIFICIAL.
+
 from time import sleep, time
 from SX127x.LoRa import *
 from SX127x.board_config import BOARD
