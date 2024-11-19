@@ -1,4 +1,4 @@
-Transmision_datos.ino  (ARDUINO)
+`Transmision_datos.ino`  (ARDUINO)
 
 Este algoritmo es responsable de recoger los datos de los sensores encargados de medir temperatura, humedad, presión atmosférica, velocidad y dirección del viento, precipitación y radiación solar en
 intervalos de 6 segundos. El intervalo se configura según la frecuencia de medición requerida para cada variable. Para transmitir los datos, se utiliza un arreglo de tamaño constante tipo byte, donde se
@@ -6,7 +6,7 @@ empaquetan todos los datos de los sensores. Este arreglo tiene una longitud de 4
 su formato binario y se almacena secuencialmente en posiciones específicas dentro de dicho arreglo, de manera que al momento de ser recibidos por otro dispositivo no haya pérdida de información.
 Los datos se transmiten en tiempo real al dispositivo de tratamiento donde estos se procesarán. 
 
-Adquisicion_datos.py  (RASPBERRY)
+`Adquisicion_datos.py`  (RASPBERRY)
 
 Este codigo captura los datos generados por los sensores de la estacion meteorologica en intervalos regulares de 6 segundos, los almacena en un archivo .CSV para su posterior análisis y también los 
 guarda en una base de datos SQL para su visualización. 
@@ -18,11 +18,11 @@ modelado de predicciones. Por otro lado, el código también almacena los datos 
 insertar los datos en la tabla correspondiente y luego cerrar la conexión. Este almacenamiento en la base de datos es crucial para acceder a los datos de manera más dinámica, por ejemplo, en una plataforma
 web o servidor de visualización.
 
-Procesamiento_prediccion.py  (RASPBERRY)
+`Procesamiento_prediccion.py`  (RASPBERRY)
 
 Este codigo inicialmente se encarga de preprocesar y procesar el conjunto de datos Jena Climate Dataset, es un paso fundamental para garantizar la eficacia del modelo de predicción climática. 
 
-Una vez transformados los datos, se dividen en conjuntos de entrenamiento 80%, validación 10% y prueba 10% para estructurar adecuadamente el proceso de modelado. Esta división es crucial para evaluar 
+Una vez transformados los datos, se dividen en conjuntos de `entrenamiento 80%`, `validación 10%` y `prueba 10%` para estructurar adecuadamente el proceso de modelado. Esta división es crucial para evaluar 
 el rendimiento del modelo y evitar el sobreajuste, asegurando que el modelo generalice bien a datos no vistos.
 Para el entrenamiento del modelo de predicción climática basado en inteligencia artificial, se seleccionó el 95% del conjunto de datos Jena Climate Dataset, equivalente a 400.000 filas de datos entre 
 01 de enero de 2009 y 07 de agosto de 2016. 
