@@ -30,4 +30,4 @@ Para el entrenamiento del modelo de predicción climática basado en inteligenci
 Posteriormente se establece un modelo para la predicción de variables climáticas, cuyo objetivo es prever con un error no mayor al 10% cada una de las siguientes variables: presión atmosférica en 
 hectopascales (hPa), temperatura en grados Celsius (°C), porcentaje de humedad relativa (%RH), velocidad del viento en metros por segundo (m/s) y dirección del viento en grados (°).
 Para generar predicciones meteorológicas se requiere una gran cantidad de datos históricos para capturar correctamente las variaciones y tendencias climáticas, por esta razón se optó por utilizar 
-en 5% restante del conjunto de datos Jena Climate Dataset (dataset_combined.csv), equivalente a 20.995 filas de datos entre 08 de agosto de 2016 y 31 de diciembre de 2016.
+en 5% restante del conjunto de datos Jena Climate Dataset `(dataset_combined.csv)`, equivalente a 20.995 filas de datos entre 08 de agosto de 2016 y 31 de diciembre de 2016.
