@@ -64,7 +64,6 @@ df['Year cos'] = np.cos(df['Seconds'] * (2 * np.pi / year))
 df = df.drop('Seconds', axis=1)
 
 df1 = df.iloc[:400000]  # Primer DataFrame con las primeras 400,000 filas
-df2 = df.iloc[400000:]  # Segundo DataFrame con las últimas 20,551 filas
 
 def df_to_X_y3(df, window_size=10):  # depende del número de columnas del dataset (columnas+1)
     df_as_np = df.to_numpy()
@@ -254,7 +253,6 @@ y_pred_t = torch.tensor(y_pred_seq, dtype=torch.float32)
 # Definir un dataset y DataLoader para manejar los datos
 dataset = TensorDataset(X_pred_t, y_pred_t)
 data_loader = DataLoader(dataset, batch_size=64, shuffle=True)
-
 
 # Evaluar el modelo
 model.eval()
