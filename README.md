@@ -8,7 +8,7 @@ Los datos se transmiten en tiempo real al dispositivo de tratamiento donde estos
 
 Adquisicion_datos.py  (RASPBERRY)
 
-Este codigo captura los datos generados por los sensores de la estacion meteorologica en intervalos regulares de 6 segundos, los almacena en un archivos .CSV para su posterior análisis y también los 
+Este codigo captura los datos generados por los sensores de la estacion meteorologica en intervalos regulares de 6 segundos, los almacena en un archivo .CSV para su posterior análisis y también los 
 guarda en una base de datos SQL para su visualización. 
 
 Una vez recibidos los datos estos son desempaquetados para convertir los bytes a valores flotantes y que posteriormente puedan ser procesados y utilizados, el código los almacena de dos formas. 
