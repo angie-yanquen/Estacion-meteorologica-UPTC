@@ -1,4 +1,5 @@
 Transmision_datos.ino  (ARDUINO)
+
 Este algoritmo es responsable de recoger los datos de los sensores encargados de medir temperatura, humedad, presión atmosférica, velocidad y dirección del viento, precipitación y radiación solar en
 intervalos de 6 segundos. El intervalo se configura según la frecuencia de medición requerida para cada variable. Para transmitir los datos, se utiliza un arreglo de tamaño constante tipo byte, donde se
 empaquetan todos los datos de los sensores. Este arreglo tiene una longitud de 40 bytes, ya que cada dato medido es de tipo float (32 bits o 4 bytes por cada valor). Cada lectura de sensor se convierte a
@@ -6,6 +7,7 @@ su formato binario y se almacena secuencialmente en posiciones específicas dent
 Los datos se transmiten en tiempo real al dispositivo de tratamiento donde estos se procesarán. 
 
 Adquisicion_datos.py  (RASPBERRY)
+
 Este codigo captura los datos generados por los sensores de la estacion meteorologica en intervalos regulares de 6 segundos, los almacena en un archivos .CSV para su posterior análisis y también los 
 guarda en una base de datos SQL para su visualización. 
 
@@ -17,6 +19,7 @@ insertar los datos en la tabla correspondiente y luego cerrar la conexión. Este
 web o servidor de visualización.
 
 Procesamiento_prediccion.py  (RASPBERRY)
+
 Este codigo inicialmente se encarga de preprocesar y procesar el conjunto de datos Jena Climate Dataset, es un paso fundamental para garantizar la eficacia del modelo de predicción climática. 
 
 Una vez transformados los datos, se dividen en conjuntos de entrenamiento 80%, validación 10% y prueba 10% para estructurar adecuadamente el proceso de modelado. Esta división es crucial para evaluar 
