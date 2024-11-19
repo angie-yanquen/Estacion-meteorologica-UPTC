@@ -315,5 +315,4 @@ results_df = results_df.round(2)
 output_path = r"C:\Users\estef\OneDrive\Documentos\UPTC\Semestre 11\PROYECTO GRADO\DATOS\PREDICCIONES\predicciones_torch.csv"
 results_df.to_csv(output_path, index=False)
 
-
 print(results_df)
