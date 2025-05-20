@@ -113,7 +113,7 @@ void loop() {
     tiempoInicioLluvia = tiempoActual;  // Reiniciar el contador de tiempo
   }
 
-  delay(2000);  // Retraso para la próxima transmisión
+  delay(6000);  // Retraso para la próxima transmisión
 }
 
 // ISR para manejar el cambio de estado en el pin D4 (sensor de lluvia)
